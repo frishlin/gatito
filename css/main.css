@@ -9,7 +9,6 @@ img{
   height: auto;
 }
 
-
 [class*="col-"] {
   min-height: 50px;
   /* background-color: blue; */
@@ -42,7 +41,26 @@ img{
   width: 212%;
 }
 
+/* #cat-walk{
+  height: auto;
+  width: 20%;
+  visibility: hidden;
+  margin-left: -190px;
+  margin-top: -63px;
+} */
+
 /* Pantalla con ancho máximo de 880 pixeles */
+/* @media screen and (max-width: 1199px) {
+
+  #cat-walk{
+    visibility: visible;
+  }
+
+  #cat-med{
+    visibility: hidden;
+  } */
+
+
 @media screen and (max-width: 880px) {
   .container-background{    /*Se cambia la imagen de fondo de día, por la imagen de noche*/
     width: 100%;
@@ -53,11 +71,11 @@ img{
     visibility: visible;
   }
 
-  #cat-big{       /*ee oculta el gato grande*/
+  #cat-big{       /*Se oculta el gato grande*/
     visibility: hidden;
   }
-  .visible-cat-med, .hidden-row-2{
-    display: none;    /*Se ocultan filas*/
+  .hidden-row-1, .hidden-row-2{ /*Se ocultan filas*/
+    display: none;
   }
 }
 
